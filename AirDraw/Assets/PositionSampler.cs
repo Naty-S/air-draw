@@ -57,8 +57,10 @@ public class PositionSampler : MonoBehaviour
     // DBUG ONLY, draw position of valid vertex so far
     private void OnDrawGizmos()
     {
-        for (var i = 0; i < _validVertex; i++)
-            Gizmos.DrawSphere(_storedVertices[i], 1f);  
+        for (var i = 0; i < _validVertex - 1; i++)
+            Gizmos.DrawLine(_storedVertices[i], _storedVertices[i+1]);  
+
+
     }
 
 
