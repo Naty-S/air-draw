@@ -60,7 +60,6 @@ public class PositionSampler : MonoBehaviour
         for (var i = 0; i < _validVertex - 1; i++)
             Gizmos.DrawLine(_storedVertices[i], _storedVertices[i+1]);  
 
-
     }
 
 
